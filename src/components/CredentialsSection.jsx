@@ -1,26 +1,26 @@
-import AnimatedSection from "./AnimatedSection";
+import AnimatedSection from "./AnimatedSection.jsx";
 
 const credentials = [
   {
-    title: "Education",
-    text: "Master of Arts in Clinical Psychology from the University of Minnesota, with a focus on evidence-based therapeutic approaches.",
+    title: "Training",
+    text: "500-hour Registered Yoga Teacher (RYT-500) through Yoga Alliance, with advanced training in Vinyasa, Yin, and Pranayama.",
   },
   {
-    title: "Licensure",
-    text: "Licensed Professional Clinical Counselor (LPCC) in the state of Minnesota, maintaining all continuing education requirements.",
+    title: "Experience",
+    text: "Over 3,000 hours of teaching across studios, retreats, and private sessions. Trained in India, Bali, and the United States.",
   },
   {
-    title: "Certifications",
-    text: "Certified in Cognitive Behavioral Therapy (CBT), EMDR, and Mindfulness-Based Stress Reduction (MBSR).",
+    title: "Philosophy",
+    text: "Rooted in the Ashtanga lineage with a modern, inclusive approach. Certified in trauma-informed yoga and adaptive movement.",
   },
 ];
 
-const BackgroundSection = () => (
+const CredentialsSection = () => (
   <section className="bg-card py-24">
     <div className="mx-auto max-w-6xl px-6">
       <AnimatedSection>
         <h2 className="text-center font-heading text-3xl text-foreground">
-          My Professional Background
+          My Teaching Background
         </h2>
       </AnimatedSection>
 
@@ -40,4 +40,4 @@ const BackgroundSection = () => (
   </section>
 );
 
-export default BackgroundSection;
+export default CredentialsSection;

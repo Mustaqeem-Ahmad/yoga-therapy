@@ -9,11 +9,11 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
         <a href="#" className="font-heading text-xl tracking-wide text-foreground">
-          Terra Bloom
+          Sora Flow
         </a>
 
         <nav className="hidden gap-8 md:flex">
-          {["About", "Specialties", "FAQ", "Contact"].map((item) => (
+          {["About", "Classes", "FAQ", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
@@ -42,7 +42,7 @@ const Header = () => {
             className="overflow-hidden border-t border-border bg-background md:hidden"
           >
             <div className="flex flex-col gap-4 px-6 py-6">
-              {["About", "Specialties", "FAQ", "Contact"].map((item) => (
+              {["About", "Classes", "FAQ", "Contact"].map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}

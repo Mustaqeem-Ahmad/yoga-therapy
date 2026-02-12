@@ -1,22 +1,22 @@
-import AnimatedSection from "./AnimatedSection";
+import AnimatedSection from "./AnimatedSection.jsx";
 import supportImg from "@/assets/support-decor.jpg";
 
-const challenges = [
-  "Persistent feelings of sadness or hopelessness",
-  "Trouble focusing or making decisions",
-  "Difficulty maintaining relationships",
-  "Feeling constantly exhausted or unmotivated",
-  "A pervasive sense of being overwhelmed",
+const benefits = [
+  "Reduce stress and quiet a busy mind",
+  "Build strength, flexibility, and balance",
+  "Improve sleep quality and daily energy",
+  "Cultivate mindfulness and self-awareness",
+  "Connect with a supportive community",
 ];
 
-const SupportSection = () => (
+const BenefitsSection = () => (
   <section className="bg-background py-24">
     <div className="mx-auto flex max-w-6xl flex-col items-center gap-16 px-6 md:flex-row">
       <AnimatedSection direction="left" className="w-full md:w-1/2">
         <div className="overflow-hidden rounded-[2rem]">
           <img
             src={supportImg}
-            alt="Decorative dried flowers"
+            alt="Hands in prayer position"
             className="h-[400px] w-full object-cover"
           />
         </div>
@@ -24,31 +24,31 @@ const SupportSection = () => (
 
       <AnimatedSection direction="right" delay={0.15} className="w-full md:w-1/2">
         <h2 className="font-heading text-3xl text-foreground md:text-4xl">
-          You don't have to do this all <em>alone</em>.
+          Your practice, your <em>transformation</em>.
         </h2>
         <p className="mt-4 font-body text-sm text-muted-foreground">
-          If you are facing any of these, there's hope:
+          Yoga meets you where you are and takes you where you need to go:
         </p>
         <ul className="mt-6 space-y-3">
-          {challenges.map((c) => (
-            <li key={c} className="flex items-start gap-3 font-body text-sm text-muted-foreground">
+          {benefits.map((b) => (
+            <li key={b} className="flex items-start gap-3 font-body text-sm text-muted-foreground">
               <span className="mt-1.5 block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
-              {c}
+              {b}
             </li>
           ))}
         </ul>
         <p className="mt-6 font-body text-sm leading-relaxed text-muted-foreground">
-          With empathy and guidance, we'll work together to navigate the challenges life throws your way.
+          Every class is designed to nurture both body and spirit, leaving you feeling grounded and renewed.
         </p>
         <a
           href="#contact"
           className="mt-8 inline-flex items-center gap-2 border border-foreground px-8 py-3 font-body text-xs font-medium tracking-[0.2em] uppercase text-foreground transition-all hover:bg-foreground hover:text-background"
         >
-          Work with me
+          Start your practice
         </a>
       </AnimatedSection>
     </div>
   </section>
 );
 
-export default SupportSection;
+export default BenefitsSection;

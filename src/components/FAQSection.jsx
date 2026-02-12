@@ -1,11 +1,11 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import AnimatedSection from "./AnimatedSection";
+import AnimatedSection from "./AnimatedSection.jsx";
 import faqImg from "@/assets/faq-decor.jpg";
 
 const faqs = [
-  { q: "Do you take insurance?", a: "Yes, I accept most major insurance plans. Please contact me to verify your specific coverage and discuss any out-of-pocket costs." },
-  { q: "What are your rates?", a: "My standard session rate is competitive for the Minneapolis area. I also offer a sliding scale for those who qualify. Let's discuss what works best for you." },
-  { q: "Do you have any openings?", a: "I currently have limited availability for new clients. Please reach out and we can find a time that works for both of us." },
+  { q: "Do I need experience to join?", a: "Not at all! Our classes welcome complete beginners. We offer modifications for every pose so you can practice at your own level and pace." },
+  { q: "What should I bring?", a: "Just yourself and comfortable clothing. We provide mats, blocks, straps, and bolsters. Feel free to bring your own mat if you prefer." },
+  { q: "How long are the classes?", a: "Most classes run 60 minutes, with our Yin sessions extending to 75 minutes. We also offer 30-minute express flows during lunch hours." },
 ];
 
 const FAQSection = () => (
@@ -15,7 +15,7 @@ const FAQSection = () => (
         <div className="flex justify-center">
           <img
             src={faqImg}
-            alt="Decorative wreath"
+            alt="Yoga props arrangement"
             className="h-80 w-80 rounded-full object-cover"
           />
         </div>

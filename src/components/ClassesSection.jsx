@@ -1,37 +1,37 @@
-import AnimatedSection from "./AnimatedSection";
+import AnimatedSection from "./AnimatedSection.jsx";
 import specialty1 from "@/assets/specialty-1.jpg";
 import specialty2 from "@/assets/specialty-2.jpg";
 import specialty3 from "@/assets/specialty-3.jpg";
 
-const specialties = [
+const classes = [
   {
-    title: "Self-Esteem",
-    description: "Building a strong sense of self-worth is key to living a fulfilled life. Let's work together to bolster your self-esteem.",
+    title: "Vinyasa",
+    description: "A dynamic, breath-linked flow that builds strength, flexibility, and focus. Perfect for those who love to move.",
     image: specialty1,
   },
   {
-    title: "Relationships",
-    description: "Navigating relationships can be complex. I'm here to guide you through these complexities to help you form healthier connections.",
+    title: "Yin",
+    description: "A slow, meditative practice with long-held poses that target deep connective tissues and promote profound relaxation.",
     image: specialty2,
   },
   {
-    title: "Burnout",
-    description: "Feeling overwhelmed by your career is more common than you think. Together, we'll identify strategies to manage and prevent burnout.",
+    title: "Breathwork",
+    description: "Harness the power of conscious breathing to calm the nervous system, increase energy, and cultivate inner stillness.",
     image: specialty3,
   },
 ];
 
-const SpecialtiesSection = () => (
-  <section id="specialties" className="bg-card py-24">
+const ClassesSection = () => (
+  <section id="classes" className="bg-card py-24">
     <div className="mx-auto max-w-6xl px-6">
       <AnimatedSection>
         <p className="font-body text-xs font-medium tracking-[0.3em] uppercase text-primary">
-          My Specialties
+          Our Classes
         </p>
       </AnimatedSection>
 
       <div className="mt-16 grid gap-12 md:grid-cols-3">
-        {specialties.map((item, i) => (
+        {classes.map((item, i) => (
           <AnimatedSection key={item.title} delay={i * 0.15}>
             <div className="group">
               <div className="overflow-hidden rounded-2xl">
@@ -55,4 +55,4 @@ const SpecialtiesSection = () => (
   </section>
 );
 
-export default SpecialtiesSection;
+export default ClassesSection;
